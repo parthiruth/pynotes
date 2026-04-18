@@ -1,5 +1,5 @@
 ---
-title: Chech Divisiblefive Number
+title: Check Number Divisible5
 date: 2026-04-18
 author: Your Name
 cell_count: 2
@@ -13,6 +13,12 @@ if check_number%5 == 0:
 else:
     print("the number is not divisible by five")
 ```
+
+    Input a number only divisible by 5: 25
+
+
+    the number is divisible by five
+
 
 
 ```python
