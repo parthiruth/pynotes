@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Module</title>
+
+    <link rel="stylesheet" href="https://parthiruth.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://parthiruth.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://parthiruth.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://parthiruth.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://parthiruth.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://parthiruth.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://parthiruth.github.io/pynotes/module.html" rel="bookmark"
+        title="Permalink to Module">Module</a></h3>
+    </header>
+
+<h6 class="subheader" title="2026-04-19T00:00:00+05:30">Sun 19 April 2026
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#1 Create a Python module that contains a function to print a greeting message and import it into another program.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function_call_name</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+
+<span class="c1">#2 Create a module that contains a function to calculate the square of a number, and use it in another file.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">check_square</span><span class="p">():</span>
+    <span class="n">check_number</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;2. Enter a square number:&quot;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">check_number</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1">#3 Write a Python program that imports the math module and calculates the square root of a number.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_squarerroot</span><span class="p">():</span>
+    <span class="n">check_number</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;3. Enter a SQ root Number:&quot;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">check_number</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
+
+<span class="c1">#4 Write a Python program that imports the math module and calculates the power of a number.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">power_of_number</span><span class="p">():</span>
+    <span class="n">num</span><span class="p">,</span> <span class="n">power</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;4. Enter two number with space one is  num &amp;&amp; one is power : &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">**</span> <span class="n">power</span><span class="p">)</span>
+
+<span class="c1">#5  Create a custom module that contains two functions: one to add numbers, one to subtract numbers, Import and use both functions. </span>
+<span class="c1">#6  Write a Python program that imports a module using from module import function syntax.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">add_and_sub</span><span class="p">():</span>
+    <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;6. Enter two number with space for addition and subtraction :&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;addition of 2 number is : </span><span class="si">{</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="si">}</span><span class="se">\n</span><span class="s2"> Substract of 2 number is : </span><span class="si">{</span><span class="n">num1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">num2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1">#7  Create a module with a function that checks whether a number is even or odd, then import it into another program.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">even_or_odd</span><span class="p">():</span>
+    <span class="n">result</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;7. Enter a number to find even or odd:&quot;</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd&quot;</span><span class="p">)</span>
+
+<span class="c1">#8 Write a Python program that imports the random module and prints a random number.</span>
+<span class="c1"># Done</span>
+<span class="c1">#9 Write a Python program that imports the datetime module and prints the current date.</span>
+<span class="c1"># Done</span>
+
+<span class="c1"># 10 Create a custom module that contains a function to reverse a string, and import it into another file.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">reverse_string</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;10. enter a name: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p>
+<p class="subheader">Category: <a href="https://parthiruth.github.io/pynotes/category/python_basics.html">python_basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://parthiruth.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://parthiruth.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://parthiruth.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://parthiruth.github.io/pynotes/category/python_basics.html">python_basics</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/parthiruth/">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/parthiban-m-407491147">linkedin</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Parthiban</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
