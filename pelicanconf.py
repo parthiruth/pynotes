@@ -13,7 +13,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ("GitHub", "https://github.com/parthiruth/"),
-    ("LinkedIn", "https://www.linkedin.com/in/parthiban-m-407491147")
+    ("linkedin", "https://www.linkedin.com/in/parthiban-m-407491147"),
 )
 
 ######## Advanced Settings (not recommended to to edited; take your own risk to touch the settings below) #############
@@ -39,7 +39,7 @@ else:
 
 OUTPUT_PATH     = 'docs'
 PATH            = "content"
-TIMEZONE        = 'America/Toronto'
+TIMEZONE        = 'Asia/Kolkata'
 DEFAULT_LANG    = 'en'
 
 # Feed generation is usually not desired when developing
