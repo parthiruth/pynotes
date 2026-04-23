@@ -1,6 +1,6 @@
 ---
 title: Check Even Odd Number
-date: 2026-04-19
+date: 2026-04-23
 author: Your Name
 cell_count: 2
 score: 0
