@@ -1,6 +1,6 @@
 ---
 title: Function Largest Number
-date: 2026-04-23
+date: 2026-04-25
 author: Your Name
 cell_count: 2
 score: 0
